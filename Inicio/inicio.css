@@ -1,0 +1,81 @@
+* {
+
+    font-family: 'Noto Serif', serif;
+
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+    background: url(fondo/fondo_inicio.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: serif;
+
+}
+
+p,
+span {
+    color: red;
+    width: 300px;
+    text-align: center;
+    margin-left: 500px;
+}
+
+/**
+
+Esto es un comentario dentro de un documento CSS
+
+ */
+
+
+h1 {
+
+    border: 1px solid goldenrod;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 500px;
+    margin-right: 480px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 15px;
+    padding: 30px 15px 25px 20px;
+    font-weight: bold;
+    color: goldenrod;
+}
+
+
+section h1 {
+    
+    font-weight: 200px;
+    border: 5px solid rgb(4, 32, 4);
+}
+
+section p{
+
+    text-align: center;
+    margin-left: 500px;
+    
+
+}
+
+#mi_parrafo {
+    color: darkblue;
+    font-size: 23px;
+    border: 1px solid orange;
+}
+
+.estaesmiclase {
+    font-weight: bold;
+    color: crimson;
+    text-align: center;
+    margin-left: 500px;
+}
+
+ul, li{
+    
+    margin-left: 290px;
+    
+}

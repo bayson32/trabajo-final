@@ -1,0 +1,176 @@
+* {
+
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+}
+
+body {
+
+   margin: 0;
+   padding: 0;
+   animation: bgcolor infinite 20s;
+
+}
+
+@keyframes bgcolor {
+
+   0% {
+
+      background: #34ace0;
+
+   }
+
+   20% {
+
+      background: #2c2c54;
+
+   }
+
+   40% {
+
+      background: #ff5252;
+
+   }
+
+   60% {
+
+      background: #b33939;
+
+   }
+
+   80% {
+
+      background: #cd6133;
+
+   }
+
+   100% {
+      background: #ffb142;
+   }
+
+}
+
+
+
+.imagen_perfil img {
+
+   height: 190px;
+   width: 190px;
+   border-radius: 50%;
+   margin-top: 100px;
+   margin-left: 500px;
+
+
+}
+
+
+.nav_label,
+.nav_input {
+
+   display: none;
+
+}
+
+.nav_Menu {
+
+   font-family: 'Noto Serif', serif;
+   display: grid;
+   grid-auto-flow: column;
+   gap: 3em;
+
+}
+
+.nav_item {
+
+   color: white;
+   text-decoration: none;
+   --clippy: polygon(0 0, 0% 100%, 0 100%);
+
+}
+
+.nav_item::after {
+
+   content: "";
+   display: block;
+   background: white;
+   width: 90%;
+   margin-top: 3px;
+   height: 3px;
+   clip-path: var(--clippy);
+   transition: clip-path .5s;
+
+}
+
+.nav_item:hover {
+
+   --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+}
+
+.nav {
+
+   background: #293241;
+   height: 80px;
+
+}
+
+.nav_logo {
+
+   font-size: 1.5em;
+   font-weight: 900;
+
+}
+
+.nav_conteiner {
+
+   display: flex;
+   height: 100%;
+   width: 90%;
+   margin-top: 0 auto;
+   justify-content: space-between;
+   align-items: center;
+
+}
+
+@media(max-width: 700px) {
+
+   .nav_label {
+
+      display: block;
+      cursor: pointer;
+
+   }
+
+   .nav_Menu {
+
+      position: fixed;
+      top: 80px;
+      border: 0;
+      background: black;
+      width: 100%;
+      left: 0;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      align-items: center;
+      clip-path: circle(0 at center);
+      transition: clip-path 1s ease-in-out;
+
+   }
+
+   .nav_input:checked+.nav_Menu {
+
+      clip-path: circle(100% at center);
+
+   }
+
+}
+
+h1{
+
+   text-align: center;
+   margin-left: 500px;
+
+}
